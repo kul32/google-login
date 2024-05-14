@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<style>
+    .email-container {
+        position: relative;
+        display: inline-block;
+        border: 1px solid blue;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 250px; 
+    }
+    .email-label {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        background-color: white;
+        padding: 0 5px;
+        color: blue;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .email-input {
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    .google-button {
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    }
+    .google-button:hover {
+    background-color: darkblue; 
+    }
+ </style>
+</head>
+<body>
+    <center>    
+    <main class="inputContainer">
+        <img src="google.png" alt="" width="87" height="33">
+        <h3 class="login">Sign in</h3>
+        <h4 class="use">Use your Google Account</h4>
+        <div class="email-container">
+            <label for="email" class="email-label">Email</label>
+            <input type="email" id="email" name="email" class="email-input" required>
+        </div>
+        <div class="forgotContainer">
+            <h5 class="forgot" style="color: blue;"><a href="https://accounts.google.com/signin/recovery" onclick="forgotEmail()">Forgot Email?</a></h5>
+        </div>
+        <h4>Not your computer? Use Guest mode to sign in privately <br> <a href="https://support.google.com/accounts" target="_blank" style="color: blue;">Learn More</a></h4>
+        <h4><a href="https://accounts.google.com/signup" target="_blank" style="color: blue;">Create Account</a></h4>
+        <br>
+        <div class="input">
+            <button id="google-login-btn" class="google-button">
+                <i class="fab fa-google"></i> Sign in
+            </button>
+        </div>     
+    </main>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
