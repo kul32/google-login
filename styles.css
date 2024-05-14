@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inputContainer{
+    max-width:22rem;
+    border:1px solid black;
+    border-radius:50px;
+    padding:55px 50px 40px 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    }
+.use{
+    font-weight: lighter;
+    }
+.gInput{
+    width:100px;
+    height:3.5rem;
+    margin-top:50px;
+    border:0.5px solid black;
+    border-radius:5px;
+    font-size:20px;
+    padding:0 0 0 15px;
+    background-color:none;
+    outline:none;
+    box-sizing:border-box;
+    }
+.gInput:focus{
+    border:2px solid #4285f4;
+    }
+.gInput:focus ~ .inputLabel:before{
+    color: #4285f4;
+    font-size: 12px;
+    top: -65px;
+    z-index: 1;
+}
+.inputLabel{
+    position: relative;
+    width: 200px;
+    }
+.inputLabel:before{
+    content:'Email' / 'Password';
+    position:absolute;
+    top:-41px;
+    left:-65px;
+    background-color:white;
+    font-size:18px;
+    z-index:-1;
+    font-weight:bold;
+    padding:0 10px;
+    box-sizing:border-box;
+    transition:0.1s ease;
+    }
+.forgotContainer{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    margin-top:10px;
+    }
+.guest{
+    margin-top:35px;
+    margin-bottom:35px;
+    }
+
+.forgot, .guest span, .btnCreate{
+    color: #4285f4;
+    }
+.guest, .inputLabel:before{
+    color: #5f6368;
+    }
